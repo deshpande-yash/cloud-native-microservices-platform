@@ -50,3 +50,12 @@ app.post('/api/users', (req, res) => {
 app.listen(PORT, () => {
   console.log(`User Service running on port ${PORT}`);
 });
+
+// Version endpoint
+app.get('/api/version', (req, res) => {
+  res.json({ 
+    service: 'user-service',
+    version: '1.1.0',
+    environment: process.env.NODE_ENV || 'development'
+  });
+});
