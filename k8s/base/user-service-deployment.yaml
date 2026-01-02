@@ -16,14 +16,16 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: yashshekhar/user-service:f515945
-        imagePullPolicy: Never
+        image: yashshekhar/user-service:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3001
           name: http
         env:
         - name: PORT
           value: "3001"
+        - name: NODE_ENV
+          value: "production"
         resources:
           requests:
             memory: "64Mi"
