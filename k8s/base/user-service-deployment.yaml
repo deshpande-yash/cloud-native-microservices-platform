@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: yashshekhar/user-service:b2979f8
+        image: yashshekhar/user-service:f515945
         imagePullPolicy: Never
         ports:
         - containerPort: 3001
