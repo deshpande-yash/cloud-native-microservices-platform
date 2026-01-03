@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: video-service
-        image: yashshekhar/video-service:latest
+        image: yashshekhar/video-service:8e16cf7
         imagePullPolicy: Always
         ports:
         - containerPort: 3002
